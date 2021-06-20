@@ -52,7 +52,8 @@
         margin: 5px 5px;
         border-radius: 20px;
         text-decoration: none;
-        color: antiquewhite;
+        color: beige;
+        font-weight: bold;
     }
     
     #navbar ul li a:hover {
@@ -87,14 +88,16 @@
     
     #home h1 {
         font-size: 3.8rem;
-        color: antiquewhite;
+        color: beige;
         text-align: center;
         text-shadow: 0 0 1px black;
     }
     
     #home p {
         font-size: 1.2rem;
-        color: rgb(250, 132, 189);
+        color: beige;
+        font-weight: bold;
+        text-shadow: 0 0 1px gray;
     }
     
     .text2 {
@@ -107,6 +110,7 @@
     .center {
         text-align: center;
         color: powderblue;
+        text-shadow: 0 0 1px grey;
     }
     
     .btn {
@@ -116,6 +120,7 @@
         border: 3px solid powderblue;
         margin: 17px;
         font-size: 1.5rem;
+        font-weight: bold;
         font-family: 'Times New Roman', Times, serif;
         color: powderblue;
         text-shadow: 0 0 1px grey;
