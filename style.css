@@ -1,157 +1,159 @@
-    * {
-        margin: 0;
-        padding: 0;
-    }
-    
-    body {
-        background-color: rgb(255, 218, 236);
-    }
-    
-    #navbar {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: fixed;
-        top: 0px;
-        left: 0px;
-        width: 100%;
-    }
-    
-    #logo {
-        margin: 6px -16px;
-    }
-    
-    #logo img {
-        height: 70px;
-        margin: 3px 29px;
-        clip-path: circle();
-    }
-    
-    #navbar ul {
-        display: flex;
-    }
-    
-    #navbar::before {
-        content: "";
-        background-color: antiquewhite;
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        z-index: -1;
-        opacity: 0.3;
-    }
-    
-    #navbar ul li {
-        list-style: none;
-        font-size: 25px;
-    }
-    
-    #navbar ul li a {
-        display: flex;
-        padding: 3px 36px;
-        margin: 5px 5px;
-        border-radius: 20px;
-        text-decoration: none;
-        color: beige;
-        font-weight: bold;
-    }
-    
-    #navbar ul li a:hover {
-        background-color: antiquewhite;
-        color: powderblue;
-    }
-    
-    #home {
-        display: flex;
-        flex-direction: column;
-        height: 610px;
-        padding: 0px 200px;
-        justify-content: center;
-        align-items: center;
-        top: 0px;
-        left: 0px;
-    }
-    
-    #home::before {
-        content: "";
-        background-image: url("./images/logoice.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        z-index: -1;
-        opacity: 0.4;
-        top: 0;
-        left: 0;
-    }
-    
-    #home h1 {
-        font-size: 3.8rem;
-        color: beige;
-        text-align: center;
-        text-shadow: 0 0 1px black;
-    }
-    
-    #home p {
-        font-size: 1.2rem;
-        color: beige;
-        font-weight: bold;
-        text-shadow: 0 0 1px gray;
-    }
-    
-    .text2 {
-        text-align: center;
-        font-size: 2.8rem;
-        padding: 0px;
-        color: beige;
-    }
-    
-    .center {
-        text-align: center;
-        color: powderblue;
-        text-shadow: 0 0 1px grey;
-    }
-    
-    .btn {
-        padding: 6px 20px;
-        background: none;
-        border-radius: 30px;
-        border: 3px solid powderblue;
-        margin: 17px;
-        font-size: 1.5rem;
-        font-weight: bold;
-        font-family: 'Times New Roman', Times, serif;
-        color: powderblue;
-        text-shadow: 0 0 1px grey;
-        cursor: pointer;
-    }
-    
-    .btn:hover {
-        background-color: antiquewhite;
-        color: hotpink;
-    }
-    
-    #stat .box img {
-        display: flex;
-        border-radius: 30px;
-        border: 5px solid bisque;
-        transition: .2s;
-        width: 60%;
-        margin: auto;
-        margin-top: 85px;
-    }
-    
-    #stat .box img:hover {
-        transform: scale(1.1);
-    }
-    
-    footer {
-        background: #e4f0f2;
-        text-align: center;
-        padding: 20px;
-        margin-top: 60px;
-        font-size: smaller;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color: darkgrey;
-    }
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(255, 218, 236);
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+#navbar #logo {
+    margin: 6px -16px;
+}
+
+#logo img {
+    height: 70px;
+    margin: 3px 29px;
+    clip-path: circle();
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar::before {
+    content: "";
+    background-color: antiquewhite;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 25px;
+}
+
+#navbar ul li a {
+    display: flex;
+    padding: 3px 36px;
+    margin: 5px 5px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: beige;
+    text-shadow: 0 0 1px bisque;
+    font-weight: bold;
+}
+
+#navbar ul li a:hover {
+    background-color: antiquewhite;
+    color: powderblue;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    height: 610px;
+    padding: 0px 200px;
+    justify-content: center;
+    align-items: center;
+    top: 0px;
+    left: 0px;
+}
+
+#home::before {
+    content: "";
+    background-image: url("./images/logoice.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    top: 0;
+    left: 0;
+}
+
+#home h1 {
+    font-size: 3.8rem;
+    color: beige;
+    text-align: center;
+    text-shadow: 0 0 1px black;
+}
+
+#home p {
+    font-size: 1.2rem;
+    color: beige;
+    font-weight: bold;
+    text-shadow: 0 0 1px gray;
+}
+
+.text2 {
+    text-align: center;
+    font-size: 2.8rem;
+    padding: 0px;
+    color: beige;
+}
+
+.center {
+    text-align: center;
+    color: powderblue;
+    text-shadow: 0 0 1px grey;
+}
+
+.btn {
+    padding: 6px 20px;
+    background: none;
+    border-radius: 30px;
+    border: 3px solid powderblue;
+    margin: 17px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: "Times New Roman", Times, serif;
+    color: powderblue;
+    text-shadow: 0 0 1px grey;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: antiquewhite;
+    color: hotpink;
+}
+
+#stat .box img {
+    display: flex;
+    border-radius: 30px;
+    border: 5px solid bisque;
+    transition: 0.2s;
+    width: 60%;
+    margin: auto;
+    margin-top: 85px;
+}
+
+#stat .box img:hover {
+    transform: scale(1.1);
+    /* resmin üzerine gelince navbarın kaybolmasını da sağladı */
+}
+
+footer {
+    background: #e4f0f2;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 60px;
+    font-size: smaller;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: darkgrey;
+}
